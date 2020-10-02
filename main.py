@@ -9,7 +9,6 @@ from functions import spc, not_spc1, not_spc2, not_spc3
 try:
     conn = sql.connect(host="127.0.0.1", user="root", passwd="12345678", database="passwordmanager")
     cur = conn.cursor()
-    exit()
 except:
     messagebox.showerror("Connection Problem", "The Application Is Unable To Connect To The Database")
     sys.exit(0)
